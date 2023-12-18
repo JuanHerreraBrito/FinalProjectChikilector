@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".fragments.AvatarSelectFragment">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glIzquierdaOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glDerechaOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glIzquierdaInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glDerechaInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glMidAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBttnAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".8" />
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/selectavatar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            style="@style/gnrl_headers"
+            android:text="@string/avatar_select"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="@+id/glTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/idIBAvatar1"
+            android:src="@drawable/avatar1v"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/glBttnAvatar"
+            app:layout_constraintEnd_toEndOf="@+id/glIzquierdaInside"
+            app:layout_constraintStart_toStartOf="@+id/glIzquierdaOut"
+            app:layout_constraintTop_toTopOf="@+id/glMidAvatar"
+            android:contentDescription="@string/contentAvatarDesc1" />
+
+        <ImageButton
+            android:id="@+id/idIBAvatar2"
+            android:src="@drawable/avatar2r"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/glBttnAvatar"
+            app:layout_constraintEnd_toEndOf="@+id/glDerechaOut"
+            app:layout_constraintStart_toStartOf="@+id/glDerechaInside"
+            app:layout_constraintTop_toTopOf="@+id/glMidAvatar"
+            android:contentDescription="@string/contentAvatarDesc2"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

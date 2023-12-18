@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Modulo4</string>
+
+    <string name="lable_next">Siguiente</string>
+    //activity itemAnimal2
+    <string name="lable_title_animal">Animal:</string>
+    <string name="lable_title_fragments">Fragments Ejemplos</string>
+    <string name="ingresa_la_siguiente_informaci_n">Ingresa la siguiente información</string>
+    <string name="hello_blank_fragment">Hola fragment en blanco</string>
+    <string name="inicio_de_sesi_n">INICIO DE SESIÓN</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="entrar">Entrar</string>
+    <string name="link_register">si no estas registrado, clic aquí</string>
+    <string name="User">Usuario</string>
+    <string name="registro">Registro</string>
+</resources>

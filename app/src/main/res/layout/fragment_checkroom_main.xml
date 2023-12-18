@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CheckroomMainFragment"
+    android:background="@color/blue_tongue_monster">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glSeparateBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".25"/>
+
+    <!--<ImageButton-->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ibChechroomHead"
+        android:src="@drawable/btnsgorras"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        app:shapeAppearanceOverlay="@style/customImageViewRounded"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparateBtns"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ibChechroomArms"
+        android:contentDescription="@string/btnCheckroomHead" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:shapeAppearanceOverlay="@style/customImageViewRounded"
+        android:id="@+id/ibChechroomArms"
+        android:src="@drawable/btnsguantes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparateBtns"
+        app:layout_constraintTop_toBottomOf="@+id/ibChechroomHead"
+        app:layout_constraintBottom_toTopOf="@+id/ibChechroomShoes"
+        android:contentDescription="@string/btnCheckroomArms" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:shapeAppearanceOverlay="@style/customImageViewRounded"
+        android:id="@+id/ibChechroomShoes"
+        android:src="@drawable/btnszapatos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glSeparateBtns"
+        app:layout_constraintTop_toBottomOf="@+id/ibChechroomArms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/btnCheckroomShoes" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="@+id/glSeparateBtns"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/backliststuff"
+        android:padding="20dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/customImageViewRounded"
+            android:id="@+id/ib_stuff1"
+            android:layout_width="150dp"
+            android:layout_height="125dp"
+            android:layout_gravity="start|top"
+            android:src="@drawable/avatar_head1"
+            android:scaleType="fitXY"
+            android:background="@color/blue_tongue_monster" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/customImageViewRounded"
+            android:id="@+id/ib_stuff2"
+            android:layout_width="150dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center|top"
+            android:src="@drawable/avatar_head2"
+            android:scaleType="fitXY"
+            android:background="@color/blue_tongue_monster" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/customImageViewRounded"
+            android:id="@+id/ib_stuff3"
+            android:layout_width="150dp"
+            android:layout_height="125dp"
+            android:layout_gravity="end|top"
+            android:src="@drawable/avatar_head3"
+            android:scaleType="fitXY"
+            android:background="@color/blue_tongue_monster" />
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

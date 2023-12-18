@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.VowelsFragment"
+    android:background="@drawable/game1_back">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_btnsl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".18"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_btnsr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".82"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_btnst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".70"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_img_selectedt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".13"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_img_selectedb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".54"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="5dp"
+        app:layout_constraintTop_toTopOf="@id/gl_img_selectedt"
+        app:layout_constraintBottom_toBottomOf="@+id/gl_img_selectedb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_ischeck"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="5dp"
+        app:layout_constraintTop_toTopOf="@id/gl_img_selectedt"
+        app:layout_constraintRight_toRightOf="@id/gl_btnsr"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/lttr_a"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/juego_letra_a"
+        app:layout_constraintTop_toBottomOf="@+id/gl_btnst"
+        app:layout_constraintStart_toStartOf="@id/gl_btnsl"
+        app:layout_constraintEnd_toStartOf="@+id/lttr_e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="5dp"
+        app:shapeAppearanceOverlay="@style/customImageViewRounded"
+
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/lttr_e"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/juego_letra_e"
+        app:layout_constraintTop_toBottomOf="@+id/gl_btnst"
+        app:layout_constraintStart_toEndOf="@+id/lttr_a"
+        app:layout_constraintEnd_toStartOf="@+id/lttr_i"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="5dp"
+        app:shapeAppearanceOverlay="@style/customImageViewRounded"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/lttr_i"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/juego_letra_i"
+        app:layout_constraintTop_toBottomOf="@+id/gl_btnst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lttr_e"
+        app:layout_constraintEnd_toStartOf="@+id/lttr_o"
+        android:layout_marginHorizontal="5dp"
+        app:shapeAppearanceOverlay="@style/customImageViewRounded"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/lttr_o"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/juego_letra_o"
+        app:layout_constraintTop_toBottomOf="@+id/gl_btnst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lttr_i"
+        app:layout_constraintEnd_toStartOf="@+id/lttr_u"
+        android:layout_marginHorizontal="5dp"
+        app:shapeAppearanceOverlay="@style/customImageViewRounded"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/lttr_u"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/juego_letra_u"
+        app:layout_constraintTop_toBottomOf="@+id/gl_btnst"
+        app:layout_constraintEnd_toEndOf="@+id/gl_btnsr"
+        app:layout_constraintStart_toEndOf="@+id/lttr_o"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="5dp"
+        style="@style/customImageViewRounded"
+        app:shapeAppearanceOverlay="@style/customImageViewRounded"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
